@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --cor-principal: #de4c45;
+    --cor-secundaria: #d9764d;
+    --cor-texto: #cc9e8a;
+    --cor-fundo: #c1c5c7;
+    --cor-branca: #ebdfc6;
+}
+
+
+.cabecalho {
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h2 {
+    font-size: 1.5rem;
+}
+
+.cabecalho nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.cabecalho nav ul li a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cabecalho nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.destinos {
+    padding: 2rem;
+    background-color: var(--cor-fundo);
+}
+
+.destinos h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+
+.grid-destinos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+
+.card {
+    background-color: var(--cor-branca);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card figure {
+    margin: 0;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card figcaption {
+    text-align: center;
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+}
+
+.card ul {
+    list-style: disc;
+    padding: 1rem;
+    margin: 0;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+}
+
+.card a:hover {
+    background-color: var(--cor-secundaria);
+}
+.orcamento{
+    background-color: var(--cor-principal);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+.form-orcamento{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+#nome, #email, #destino, #data, #mensagem, #data-viagem, button{
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+}
+.texto-card{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+
+}

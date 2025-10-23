@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aloha Viagens</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h2>Aloha Viagens</h2>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#orcamento">Faça seu orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinos" class="destinos">
+            <h2>Destinos Incríveis</h2>
+            <div class="grid-destinos">
+                <!-- Card 1 -->
+                <div class="card">
+                    <figure>
+                        <img src="./img/paris.png" alt="Torre Eiffel em Paris">
+                        <figcaption>Paris, França</figcaption>
+                    </figure>
+                    <li>
+                        <li class="texto-card">Ponto turístico: Torre Eiffel</li>
+                        <li class="texto-card">Curiosidade: Conhecida como a Cidade Luz</li>
+                    </li>
+                    <a href="https://www.parisinfo.com/" target="_blank">Saiba mais</a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <figure>
+                        <img src="./img/riodejaneiro.png" alt="Cristo Redentor no Rio de Janeiro">
+                        <figcaption>Rio de Janeiro, Brasil</figcaption>
+                    </figure>
+                    <li>
+                        <li class="texto-card">Ponto turístico: Cristo Redentor</li>
+                        <li class="texto-card">Curiosidade: Famoso pelo Carnaval</li>
+                    </li>
+                    <a href="https://www.visitbrasil.com/" target="_blank">Saiba mais</a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <figure>
+                        <img src="./img/toquio.jpg" alt="Templo em Tóquio">
+                        <figcaption>Tóquio, Japão</figcaption>
+                    </figure>
+                    <li>
+                        <li class="texto-card">Ponto turístico: Templo Senso-ji</li>
+                        <li class="texto-card">Curiosidade: Mistura de tradição e modernidade</li>
+                    </li>
+                    <a href="https://www.gotokyo.org/en/" target="_blank">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+    <section id="orcamento" class="orcamento">
+        <h2>Faça seu orçamento</h2>
+        <form action="#" method="post" class="form-orcamento">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="destino">Destino desejado:</label>
+            <select id="destino" name="destino" required>
+                <option value="">Selecione um destino</option>
+                <option value="paris">Paris, França</option>
+                <option value="rio">Rio de Janeiro, Brasil</option>
+                <option value="toquio">Tóquio, Japão</option>
+            </select>
+
+            <label for="data-viagem">Data da viagem:</label>
+            <input type="date" id="data-viagem" name="data-viagem" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
